@@ -13,5 +13,7 @@ namespace DeveloperDashboard.web.Models
             : base("DefaultConnection")
         {
         }
+
+        public string Department { get; set; }
     }
 }

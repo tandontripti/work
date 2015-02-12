@@ -32,7 +32,7 @@ namespace DeveloperDashboard.web
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication();
+            app.UseGoogleAuthentication();
         }
     }
 }

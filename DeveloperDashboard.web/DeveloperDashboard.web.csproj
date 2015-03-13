@@ -187,7 +187,9 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\banner-2.jpg" />
+    <Content Include="Content\Images\default.gif" />
     <Content Include="Content\Images\icon.png" />
+    <Content Include="Content\Images\powercoder.png" />
     <Content Include="Content\Images\slide-banner1.jpg" />
     <Content Include="Content\Images\web-design-development-charlotte-north-carolina_0.png" />
     <Content Include="Content\Images\web-development-banner.jpg" />

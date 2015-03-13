@@ -19,15 +19,15 @@
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
-                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                               <span class="sr-only">Toggle navigation</span>
-                               <span class="icon-bar"></span>
-                               <span class="icon-bar"></span>
-                               <span class="icon-bar"></span>
-                             </button>
-                
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
                 </div>
-                       <div class="collapse navbar-collapse">
+                <div class="collapse navbar-collapse">
 
                     <ul class="nav navbar-nav">
                         <li><a href="#"><span class="glyphicon glyphicon-twitter"></span> Follow Us on Ch9</a></li>
@@ -37,19 +37,20 @@
                         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                     </ul>
-                </div></div>
+                </div>
+            </div>
         </nav>
-        </nav><br />
+    </nav><br />
     <div>
         <h3> Developer Achievement</h3>
     </div>
     <div class="search bing">
-       <div class="nav navbar-nav navbar-right">
+        <div class="nav navbar-nav navbar-right">
             <form action="/Search" autocomplete="off" class="siteSearch">
                 <input type="text" class="text inactive" value="Search this site" name="term" />
                 <input class="theSubmit" type="submit" alt="Submit" />
             </form>
-       </div>
+        </div>
     </div>
     <div class="container">
         <div class="btn-group">
@@ -87,7 +88,7 @@
             </ul>
         </div>
     </div>
-   <br/>
+    <br />
     <br />
     <div class="container">
         <br>
@@ -107,18 +108,18 @@
                 </div>
 
                 <div class="item">
-                     <img src="~/Content/Images/slide-banner1.jpg" />
+                    <img src="~/Content/Images/slide-banner1.jpg" />
                 </div>
 
                 <div class="item">
-                    <img src="~/Content/Images/webdevelopment_banner.jpg" />                   
+                    <img src="~/Content/Images/webdevelopment_banner.jpg" />
                 </div>
 
-                <div class="item">  
-                    <img src="~/Content/Images/web-development-banner.jpg" />                
+                <div class="item">
+                    <img src="~/Content/Images/web-development-banner.jpg" />
                 </div>
                 <div class="item active">
-                     <img src="~/Content/Images/website_banner-01.jpg" />
+                    <img src="~/Content/Images/website_banner-01.jpg" />
                 </div>
             </div>
 
@@ -133,32 +134,116 @@
             </a>
         </div>
     </div><br /><br />
+    <br />
 
-    <div class="row">
-        @if (Model != null)
-        {
-            foreach (var item in Model)
-            {
-                <ul id="menu">
-                    <li>
-                        @Html.DisplayFor(modelItem => item.Title)
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <p><h4>Achievement</h4></p>
+                <p>____________________________________</p>
+                <p><h5>Customizing Visual Studio</h5></p>
+                <div class="details">
+                    <img src="~/Content/Images/icon.png" />
+                    <div>
+                        <div><a href="#">Extensions Junkie</a> (5 points)</div>
+                        Install 5 extensions to Visual Studio. Extensibility rocks!
+                    </div>
+                </div>
+                <div class="details">
+                    <img src="~/Content/Images/icon.png" />
+                    <div>
+                        <div><a href="#">Gotta Be Different</a>(10points)</div>
+                        Load custom Visual Studio settings. I swear, they never get the default settings right.
+                    </div>
+                </div>
+                <div class="details">
+                    <img src="~/Content/Images/icon.png" />
+                    <div>
+                        <div><a href="#">Extensions Junkie Deluxe</a>(15points)</div>
+                        Install 10 extensions to Visual Studio. How can you find anything on a menu? 
+                    </div>
+                </div>
+                <div class="details">
+                    <img src="~/Content/Images/powercoder.png" />
+                    <div>
+                        <div><a href="#">Complex</a> 8 points)</div>
+                        Have 50 projects in a solution. That's kinda scary. 
+                    </div>
+                </div>
+                <div class="details">
+                    <img src="~/Content/Images/powercoder.png" />
+                    <div>
+                        <div><a href="#">Equal Opportunist</a>(10points)</div>
+                        Write a class with public, private, protected and internal members. It's all about scope.
+                    </div>
+                </div>
+                <div class="details">
+                    <img src="~/Content/Images/powercoder.png" />
+                    <div>
+                        <div><a href="#">On the shoulders of Giants</a>(15points)</div>
+                        Reference 25 assemblies. Hey, why should you write it if someone else already did?
+                    </div>
+                </div>
+                </div>
+            <div class="col-sm-6">
+                <p><h4>Leaderboard</h4></p>
+                <p>____________________________________</p>
+                <div class="container">
+                    <img src="~/Content/Images/default.gif" class="img-circle" alt="Cinque Terre" width="86" height="86" />   
+                    <span class="tab-content"></span>
+                    <img src="~/Content/Images/default.gif" class="img-circle" alt="Cinque Terre" width="86" height="86" />                    
+                    <img src="~/Content/Images/default.gif" class="img-circle" alt="Cinque Terre" width="86" height="86" /><br /><br />
+                    <img src="~/Content/Images/default.gif" class="img-circle" alt="Cinque Terre" width="86" height="86" />
+                    <img src="~/Content/Images/default.gif" class="img-circle" alt="Cinque Terre" width="86" height="86" />
+                  <!--  <span class="tab-content"></span> -->
+                    <img src="~/Content/Images/default.gif" class="img-circle" alt="Cinque Terre" width="86" height="86" /><br /><br />
+                    <img src="~/Content/Images/default.gif" class="img-circle" alt="Cinque Terre" width="86" height="86" />
+                    <img src="~/Content/Images/default.gif" class="img-circle" alt="Cinque Terre" width="86" height="86" />
+                    <img src="~/Content/Images/default.gif" class="img-circle" alt="Cinque Terre" width="86" height="86" /><br /><br />
+                    <img src="~/Content/Images/default.gif" class="img-circle" alt="Cinque Terre" width="86" height="86" />
+                    <img src="~/Content/Images/default.gif" class="img-circle" alt="Cinque Terre" width="86" height="86" />
+                    <img src="~/Content/Images/default.gif" class="img-circle" alt="Cinque Terre" width="86" height="86" /><br /><br />
+                    <img src="~/Content/Images/default.gif" class="img-circle" alt="Cinque Terre" width="86" height="86" />
+                    <img src="~/Content/Images/default.gif" class="img-circle" alt="Cinque Terre" width="86" height="86" />
+                    <img src="~/Content/Images/default.gif" class="img-circle" alt="Cinque Terre" width="86" height="86" /><br /><br />
+                    <img src="~/Content/Images/default.gif" class="img-circle" alt="Cinque Terre" width="86" height="86" />
+                    <img src="~/Content/Images/default.gif" class="img-circle" alt="Cinque Terre" width="86" height="86" />
+                    <img src="~/Content/Images/default.gif" class="img-circle" alt="Cinque Terre" width="86" height="86" /><br /><br />
+                 </div>
+            </div>
+        </div>
+    </div><br />
+    
+                   
+    
 
-                    </li>
-                    <li>
-                        @Html.DisplayFor(modelItem => item.Points)
+    
 
-                        <br />
-                    </li>
-                    <li>
-                        @Html.DisplayFor(modelItem => item.Category)
-                    </li>
-                    <li>
-                        @Html.Image(item.Icon)
-                    </li>
-                </ul>
-            }
-        }
+              <!--     <div class="row">
+                        @if (Model != null)
+                        {
+                            foreach (var item in Model)
+                            {
+                                <ul id="menu">
+                                    <li>
+                                        @Html.DisplayFor(modelItem => item.Title)
 
-    </div>
+                                    </li>
+                                    <li>
+                                        @Html.DisplayFor(modelItem => item.Points)
+
+                                        <br />
+                                    </li>
+                                    <li>
+                                        @Html.DisplayFor(modelItem => item.Category)
+                                    </li>
+                                    <li>
+                                        @Html.Image(item.Icon)
+                                    </li>
+                                </ul>
+                            }
+                        }
+
+                    </div>-->
 </body>
 </html>

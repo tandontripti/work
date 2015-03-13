@@ -7,6 +7,9 @@ namespace DeveloperDashboard.web.Models
         [Required]
         [Display(Name = "User name")]
         public string UserName { get; set; }
+        public string Residence { get; set; }
+        public System.DateTime? BirthDate { get; set; }
+
     }
 
     public class ManageUserViewModel

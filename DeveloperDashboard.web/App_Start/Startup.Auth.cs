@@ -28,11 +28,11 @@ namespace DeveloperDashboard.web
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+           app.UseFacebookAuthentication(
+             appId: "812384315500081",
+             appSecret: "6802aa9fc5e5077c3665aaaf35642484");
 
-            app.UseGoogleAuthentication();
+           // app.UseGoogleAuthentication();
         }
     }
 }

@@ -1,31 +1,164 @@
-﻿@{
+﻿@model IEnumerable<DeveloperDashboard.web.Models.AchievementModel>
+@{
+
     ViewBag.Title = "Home Page";
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1">
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-</div>
+    
+ <style type="text/css">
+        body{background:violet;}
+    </style>
+</head>
+<body>
+    <nav class=" navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                               <span class="sr-only">Toggle navigation</span>
+                               <span class="icon-bar"></span>
+                               <span class="icon-bar"></span>
+                               <span class="icon-bar"></span>
+                             </button>
+                
+                </div>
+                       <div class="collapse navbar-collapse">
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+                    <ul class="nav navbar-nav">
+                        <li><a href="#"><span class="glyphicon glyphicon-twitter"></span> Follow Us on Ch9</a></li>
+                        <li> <a href="#"><span class="glyphicon glyphicon-rss"></span> Subscribe To Channel 9 </a> </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div></div>
+        </nav>
+        </nav><br />
+    <div>
+        <h3> Developer Achievement</h3>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    <div class="search bing">
+       <div class="nav navbar-nav navbar-right">
+            <form action="/Search" autocomplete="off" class="siteSearch">
+                <input type="text" class="text inactive" value="Search this site" name="term" />
+                <input class="theSubmit" type="submit" alt="Submit" />
+            </form>
+       </div>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    <div class="container">
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Browse <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Windows Content</a></li>
+                <li><a href="#">Windows Phone Content</a></li>
+                <li><a href="#">Azure Content</a></li>
+            </ul>
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Forum <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Site Feedback</a></li>
+                <li><a href="#">Tech Off</a></li>
+                <li><a href="#">Microsoft Ignite</a></li>
+            </ul>
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Coding4Fun <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Site Feedback</a></li>
+                <li><a href="#">Tech Off</a></li>
+                <li><a href="#">Microsoft Ignite</a></li>
+            </ul>
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Events <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Site Feedback</a></li>
+                <li><a href="#">Tech Off</a></li>
+                <li><a href="#">Microsoft Ignite</a></li>
+            </ul>
+        </div>
     </div>
-</div>
+   <br/>
+    <br />
+    <div class="container">
+        <br>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+                <div class="item">
+                    <img src="~/Content/Images/banner-2.jpg" />
+                </div>
+
+                <div class="item">
+                     <img src="~/Content/Images/slide-banner1.jpg" />
+                </div>
+
+                <div class="item">
+                    <img src="~/Content/Images/webdevelopment_banner.jpg" />                   
+                </div>
+
+                <div class="item">  
+                    <img src="~/Content/Images/web-development-banner.jpg" />                
+                </div>
+                <div class="item active">
+                     <img src="~/Content/Images/website_banner-01.jpg" />
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div><br /><br />
+
+    <div class="row">
+        @if (Model != null)
+        {
+            foreach (var item in Model)
+            {
+                <ul id="menu">
+                    <li>
+                        @Html.DisplayFor(modelItem => item.Title)
+
+                    </li>
+                    <li>
+                        @Html.DisplayFor(modelItem => item.Points)
+
+                        <br />
+                    </li>
+                    <li>
+                        @Html.DisplayFor(modelItem => item.Category)
+                    </li>
+                    <li>
+                        @Html.Image(item.Icon)
+                    </li>
+                </ul>
+            }
+        }
+
+    </div>
+</body>
+</html>
